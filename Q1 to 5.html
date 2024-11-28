@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+        #c2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p class="a" id="c">this is first.</p>
+    <p class="a" id="c1">this is second.</p>
+    <p class="a" id="c2">this is third.</p>
+    <p class="a" id="c3">this is fourth.</p>
+    <script>
+       document.querySelector('p').style.backgroundColor='red';
+       document.querySelector('#c1').style.color='cyan';
+       document.querySelector('#c2').style.color='yellow';
+    </script>
+</body>
+</html>

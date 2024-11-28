@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <p class="a">this is for querySelectorAll</p>
+    <p class="a">this is for querySelectorAll</p>
+    <p class="a">this is for querySelectorAll</p>
+    <p class="a">this is for querySelectorAll</p>
+    <p class="a">this is for querySelectorAll</p>
+    <script>
+        const nm= document.querySelectorAll('.a');
+        function fun(){
+            alert('queryselectorAll')
+        }
+        for(let i=0;i<nm.length;i++){
+            nm[i].style.color='cyan'; 
+            nm[i].style.border='2px solid black';
+            nm[i].style.width='max-content';
+            if(i==2){
+                nm[i].style.color='red'; 
+            }else if(i==3){
+                nm[i].style.color='blue'; 
+                nm[i].addEventListener('click',fun());
+            }
+        }
+    </script>
+</body>
+</html>
